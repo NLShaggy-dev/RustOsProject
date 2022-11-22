@@ -13,10 +13,13 @@ pub extern "C" fn _start() -> ! {
     // named '_start' by default
     println!("Hello World{}", "!");
 
+    blog_os::init();
+
     // runs tests when we run `cargo test`
     #[cfg(test)]
     test_main();
 
+    println!("It did not crash!");
     loop {}
 }
 
