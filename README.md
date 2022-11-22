@@ -32,3 +32,8 @@ image is found in `{project dir}/target/x86_64-blog_os/debug/bootimage-blog_os.b
 to boot up and test our image locally we can use qemu so install that.
 
 to run the runner in the project from bootimage script just do `cargo run`
+
+### integration tests
+```
+cargo test
+```
